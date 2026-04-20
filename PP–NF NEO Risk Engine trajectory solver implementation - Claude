@@ -1,0 +1,113 @@
+PP-NF SUBSTRATE MECHANICS ◆ MODULE 2
+NF PRESSURE ATLAS PRECOMPUTER
+GRID 42×42
+HORIZON 10 yr
+▶ BUILD NF ATLAS
+▶ PLAY
+0.0%
+GRID NODES
+∇P FIELD
+ORBITS
+BODIES
+ATLAS CONFIGURATION
+FRAMES/YR
+
+50 f/yr
+TOTAL SLICES
+500
+MEMORY EST.
+3.4 MB
+STATUS
+OFFLINE
+LIVE FIELD METRICS — T = 0.000 yr
+P(Earth) NF
+—
+|∇P| at Earth
+—
+Sun–Jup dist
+—
+Active fold Σ
+9447
+P(1AU,0) OVER TIME
+|∇P| RADIAL PROFILE (current frame)
+BUILD LOG
+NF CONTRIBUTORS — TOGGLE ON/OFF
+☉
+Sun
+9000
+95.3%
+STAR
+ON
+☿
+Mercury
+0.055
+0.0%
+INNER
+ON
+♀
+Venus
+0.820
+0.0%
+INNER
+ON
+⊕
+Earth
+1.000
+0.0%
+INNER
+ON
+☽
+Moon
+0.012
+0.0%
+INNER
+ON
+♂
+Mars
+0.107
+0.0%
+INNER
+ON
+♃
+Jupiter
+318
+3.4%
+OUTER
+ON
+♄
+Saturn
+95.000
+1.0%
+OUTER
+ON
+⛢
+Uranus
+14.500
+0.2%
+OUTER
+ON
+♆
+Neptune
+17.100
+0.2%
+OUTER
+ON
+PRECOMPUTED ATLAS — QUERY INTERFACE
+Once built, the atlas is queried by NEO trajectory integrator at each step via bilinear spatial + linear temporal interpolation — cost O(1) per step.
+QUERY INTERFACE — nfAtlas.sample(x, y, t)
+→ returns PNF(x,y,t)
+→ returns ∇PNF(x,y,t) via finite difference
+→ NEO integrator calls once per timestep
+→ latency: ~0.05ms per query (interpolated)
+ADAPTIVE RESOLUTION STRATEGY
+Baseline catalog: 50 frames/yr — weekly snapshots
+High-risk window: 200 frames/yr — daily cadence
+Ring crossings: auto-flagged — local refinement triggered
+COMPUTE PIPELINE STATUS
+Atlas build: PENDING — 0/500 frames
+NEO solver: AWAITING ATLAS
+Ring-crossing detector: OFFLINE
+◆ PNF(r) = P₀(1 + κ/r) — NF fold law
+◆ ∇P = -P₀κ/r² r̂ — substrate shove driver
+◆ Grid: 42×42 bilinear | time: linear interpolation
+PP-NF NEO RISK ENGINE ◆ MODULE 2/3

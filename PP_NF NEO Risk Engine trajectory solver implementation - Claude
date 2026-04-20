@@ -1,0 +1,73 @@
+PP-NF NEO RISK ENGINE ◆ FULLY INTEGRATED
+MODULE 1 ↔ MODULE 2 ↔ MODULE 3
+MOD1 TRAJECTORY
+↔
+MOD2 NF ATLAS
+↔
+MOD3 RING DETECT
+⏸ PAUSE
+↺ RESET
+◆ APOPHIS
+◆ BENNU
+◆ 1950 DA
+T = 26.805 yr
+Δ_Earth = 120734477 km
+● Mer
+ 
+● Ven
+ 
+● Ear
+ 
+● Mar
+ 
+● Jup
+— dashed = NF rings · arrow = shove
+PALERMO SCALE — LIVE (integration-adjusted)
+NASA
+-1.93
+EURO
+-2.51
+PP-NF
+-1.19
+AVG
+-1.88
+INTEGRATION RISK DELTAS (module event accumulation)
+RING CROSS
+KEYHOLE
+NF FRAG
+ATLAS RES
+TOTAL Δ PALERMO
++1.808
+PALERMO DIVERGENCE — ALL MODELS LIVE
+— NASA
+— EURO
+— PP-NF
+— AVG
+ATLAS P_NF AT NEO POSITION (module 2 feed)
+P_atlas: 9516.9
+P_live: 8974.7
+|ΔP|: 542.21
+|∇P|: 8848.852
+INTEGRATION EVENT STREAM
+[ATL] 26.805y Atlas→Solver: P_atlas=6566.5 vs live=6567.3 | ΔP=-0.84 [interpolation residual]
+[RIN] 26.805y BENNU ↔ Venus ring-1 at 0.653 AU | Δrisk +0.004
+[ATL] 26.790y Atlas→Solver: P_atlas=6628.2 vs live=6601.8 | ΔP=26.48 [interpolation residual]
+[RIN] 26.790y BENNU ↔ Venus ring-2 at 0.685 AU | Δrisk +0.004
+[ATL] 26.760y Atlas→Solver: P_atlas=6762.2 vs live=6685.1 | ΔP=77.07 [interpolation residual]
+[RIN] 26.760y BENNU ↔ Earth ring-3 at 1.130 AU | Δrisk -0.080
+[ATL] 26.760y Atlas→Solver: P_atlas=6762.2 vs live=6685.1 | ΔP=77.07 [interpolation residual]
+[RIN] 26.760y BENNU ↔ Venus ring-3 at 0.774 AU | Δrisk +0.004
+[ATL] 26.760y Atlas→Solver: P_atlas=10344.6 vs live=9486.9 | ΔP=857.66 [interpolation residual]
+[RIN] 26.760y APOPHIS ↔ Jupiter ring-3 at 5.778 AU | Δrisk -0.044
+[ATL] 26.716y Atlas→Solver: P_atlas=7016.4 vs live=6847.8 | ΔP=168.59 [interpolation residual]
+[RIN] 26.716y BENNU ↔ Earth ring-2 at 1.008 AU | Δrisk -0.080
+[ATL] 26.706y Atlas→Solver: P_atlas=7087.8 vs live=6890.3 | ΔP=197.44 [interpolation residual]
+[RIN] 26.706y BENNU ↔ Jupiter ring-3 at 5.709 AU | Δrisk -0.044
+[ATL] 26.686y Atlas→Solver: P_atlas=7635.1 vs live=7659.5 | ΔP=-24.37 [interpolation residual]
+[RIN] 26.686y 1950 DA ↔ Earth ring-2 at 1.021 AU | Δrisk -0.080
+[ATL] 26.686y Atlas→Solver: P_atlas=7254.9 vs live=6982.7 | ΔP=272.18 [interpolation residual]
+[RIN] 26.686y BENNU ↔ Earth ring-1 at 0.930 AU | Δrisk -0.150
+◆ Atlas refreshes every 90 frames → feeds ring detector live
+◆ Ring crossings accumulate Δrisk → update all 3 Palermo scores
+◆ Keyhole entry triggers trajectory divergence back to Module 1
+PP-NF NEO RISK ENGINE v1.0 ◆ MODULES 1-2-3 INTEGRATED
